@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1 class="logo"></h1>
+            <nav> <!-- seção onde será mostrado os intens do sub-menu dentro de um outro menu  -->
+                <ul class="menu-principal">
+                    <li class="submenu">
+                        <a href="#">Menu</a><!--Tag usada para fazer a linkagem com liks internos-->
+                        <ul class="submenu-itens"><!-- Itens do submenu -->
+                            <li><a href="#sobre">Quem Sou</a></li>
+                            <li><a href="#portfolio">Trabalhos</a></li>
+                            <li><a href="#formacao">Formação</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+
+    <!-- seção onde sera mostrado a mensagem bem vindo ao meu portifolio -->
+    <section id="banner"><!--Tag utilizada para marcar as seções de conteúdo da pagina-->
+        <div class="container">
+            <h2>Bem-vindo ao meu Portfólio!</h2>
+            
+        </div>
+    </section>
+    <br><!--Tag usada para dar espaçamentos entres as linhas e seções-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Seção onde ira conter inforções sobre o usuário, hobbies, preferincias, e um pouco da minha tragetória -->
+    <section id="sobre"><!--Aqui sera feita a linkagem com a seção de sub menus que ao clicar ira ser refirecionado para ca -->
+        <div class="container">
+            <h2>Quem Sou</h2>
+            <p>
+                Olá me chamo Anderson Lima Nunes dos Santos, estou iniciando minha jornada na área da programação ainda não tenho muitos projetos para mostrar,
+                estou sempre disposto a aprender e evoluir na área que eu sempre gostei e acompanho desde de menor, sempre fui muito ligado na área da tecnologia
+                desde menor como ja tiha mensionado, sempre me interessando e procurando saber mais mais sobre essa incrível área, mesmo sentindo medo de se arriscar fora da minha area de conforto, pois sou uma pessoa quenrendo ou não muito insegura, mesmo tendo dificuldades as vezes para aprender sempre tento o meu melhor, acho que e isso que eu tenho para falar sobre mim.
+            </p><!--Tag usada para gerar paragrafos-->
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Seção onde ira conter projetos mesmo que ainda não tenha nada ainda -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projeto">
+            </div>
+            <h2>Sinto muinto, mais ainda não tenho projetos para mostrar, mas fique tranquilo irei dar o meu melhor para que o quanto antes os mesmo estejam disponiveis aqui!</h2>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Seção onde será falado um pouco sobre minha formação  -->
+    <section id="formacao">
+        <div class="container">
+            <h2>Formação</h2>
+            <ul><!--Tag usada para fazer listas assim com li, ul, lo-->
+                <li>Analise e desenvolvimento de sistemas - Uninter (Em curso)</li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Seção onde sera possivel entrar em contato atraves do email -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <!-- Formulário de contato -->
+            <form action="enviar_contato.php" method="POST"><!--Tag usada para fazer formularios-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+</html>
